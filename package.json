@@ -1,0 +1,19 @@
+{
+    "name": "apple-colors",
+    "version": "1.0.0",
+    "description": "A set of Apple Colors converted into CSS Variables.",
+    "author": "Kunal Tanwar <kunaltanwar2@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "compile-iOS/iPadOS-colors": "sass src/scss/iOS-iPadOS/colors.scss --no-source-map -s compressed dist/css/iOS-iPadOS/colors.min.css",
+        "compile-iOS/iPadOS-accessible-colors": "sass src/scss/iOS-iPadOS/accessible-colors.scss --no-source-map -s compressed dist/css/iOS-iPadOS/accessible-colors.min.css",
+        "compile-macOS-colors": "sass src/scss/macOS/colors.scss --no-source-map -s compressed dist/css/macOS/colors.min.css",
+        "compile-macOS-vibrant-colors": "sass src/scss/macOS/vibrant-colors.scss --no-source-map -s compressed dist/css/macOS/vibrant-colors.min.css",
+        "compile-macOS-accessible-colors": "sass src/scss/macOS/accessible-colors.scss --no-source-map -s compressed dist/css/macOS/accessible-colors.min.css",
+        "compile-macOS-accessible-vibrant-colors": "sass src/scss/macOS/accessible-vibrant-colors.scss --no-source-map -s compressed dist/css/macOS/accessible-vibrant-colors.min.css",
+        "compile-watchOS": "sass src/scss/watchOS/colors.scss --no-source-map -s compressed dist/css/watchOS/colors.min.css"
+    },
+    "devDependencies": {
+        "sass": "^1.54.0"
+    }
+}
