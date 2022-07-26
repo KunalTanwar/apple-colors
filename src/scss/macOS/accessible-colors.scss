@@ -1,0 +1,62 @@
+$accessible-colors: (
+    'systemRed': (
+        light: 215 0 21,
+        dark: 255 105 97,
+    ),
+    'systemOrange': (
+        light: 201 52 0,
+        dark: 255 179 64,
+    ),
+    'systemYellow': (
+        light: 160 90 0,
+        dark: 255 212 38,
+    ),
+    'systemGreen': (
+        light: 0 125 27,
+        dark: 49 222 75,
+    ),
+    'systemMint': (
+        light: 12 129 123,
+        dark: 102 212 207,
+    ),
+    'systemTeal': (
+        light: 0 130 153,
+        dark: 93 230 255,
+    ),
+    'systemCyan': (
+        light: 0 113 164,
+        dark: 112 215 255,
+    ),
+    'systemBlue': (
+        light: 0 64 221,
+        dark: 64 156 255,
+    ),
+    'systemIndigo': (
+        light: 54 52 163,
+        dark: 125 122 255,
+    ),
+    'systemPurple': (
+        light: 173 68 171,
+        dark: 218 143 255,
+    ),
+    'systemPink': (
+        light: 211 15 69,
+        dark: 255 100 130,
+    ),
+    'systemBrown': (
+        light: 127 101 69,
+        dark: 181 148 105,
+    ),
+    'systemGray': (
+        light: 105 105 110,
+        dark: 152 152 157,
+    ),
+);
+
+:root {
+    @each $color, $variants in $accessible-colors {
+        @each $variant, $rgb in $variants {
+            --#{$color}-#{$variant}: rgb(#{$rgb});
+        }
+    }
+}

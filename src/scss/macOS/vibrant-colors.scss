@@ -1,0 +1,62 @@
+$vibrant-colors: (
+    'systemRed': (
+        light: 255 49 38,
+        dark: 255 79 68,
+    ),
+    'systemOrange': (
+        light: 245 139 0,
+        dark: 255 169 20,
+    ),
+    'systemYellow': (
+        light: 245 194 0,
+        dark: 255 224 20,
+    ),
+    'systemGreen': (
+        light: 30 195 55,
+        dark: 60 225 85,
+    ),
+    'systemMint': (
+        light: 0 189 180,
+        dark: 108 224 219,
+    ),
+    'systemTeal': (
+        light: 46 167 189,
+        dark: 68 212 237,
+    ),
+    'systemCyan': (
+        light: 65 175 220,
+        dark: 90 205 250,
+    ),
+    'systemBlue': (
+        light: 0 112 245,
+        dark: 20 142 255,
+    ),
+    'systemIndigo': (
+        light: 84 82 204,
+        dark: 99 97 242,
+    ),
+    'systemPurple': (
+        light: 159 75 201,
+        dark: 204 101 255,
+    ),
+    'systemPink': (
+        light: 245 35 75,
+        dark: 255 65 105,
+    ),
+    'systemBrown': (
+        light: 52 122 84,
+        dark: 182 152 114,
+    ),
+    'systemGray': (
+        light: 132 132 137,
+        dark: 162 162 167,
+    ),
+);
+
+:root {
+    @each $color, $variants in $vibrant-colors {
+        @each $variant, $rgb in $variants {
+            --#{$color}-#{$variant}: rgb(#{$rgb});
+        }
+    }
+}

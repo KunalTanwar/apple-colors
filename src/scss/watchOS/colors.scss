@@ -1,0 +1,21 @@
+$colors: (
+    systemRed: 255 59 48,
+    systemOrange: 255 149 0,
+    systemYellow: 255 230 32,
+    systemGreen: 4 222 113,
+    systemMint: 102 212 207,
+    systemTeal: 106 196 220,
+    systemCyan: 90 200 250,
+    systemBlue: 32 148 250,
+    systemIndigo: 120 122 255,
+    systemPurple: 191 90 242,
+    systemPink: 250 17 79,
+    systemBrown: 172 142 104,
+    systemGray: 155 160 170,
+);
+
+:root {
+    @each $color, $rgb in $colors {
+        --#{$color}: rgb(#{$rgb});
+    }
+}
