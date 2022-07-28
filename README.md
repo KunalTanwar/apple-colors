@@ -10,7 +10,10 @@ To rapidly include the minified production file in your webpage.
 
 ```html
 <!-- Default -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/iOS-iPadOS/colors.min.css" />
+<link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/iOS-iPadOS/colors.min.css" 
+/>
 
 <!-- Accessible -->
 <link
@@ -31,7 +34,10 @@ To rapidly include the minified production file in your webpage.
 
 ```html
 <!-- Default -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/macOS/colors.min.css" />
+<link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/macOS/colors.min.css" 
+/>
 
 <!-- Vibrant -->
 <link
@@ -69,8 +75,10 @@ To rapidly include the minified production file in your webpage.
 ### [watchOS](https://developer.apple.com/design/human-interface-guidelines/foundations/color#system-colors-watchos) Variant
 
 ```html
-<link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/watchOS/colors.min.css" />
+<link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/watchOS/colors.min.css"
+/>
 ```
 
 ```css
