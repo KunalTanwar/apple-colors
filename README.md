@@ -69,7 +69,8 @@ To rapidly include the minified production file in your webpage.
 ### [watchOS](https://developer.apple.com/design/human-interface-guidelines/foundations/color#system-colors-watchos) Variant
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/watchOS/colors.min.css" />
+<link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/gh/KunalTanwar/apple-colors/dist/css/watchOS/colors.min.css" />
 ```
 
 ```css
